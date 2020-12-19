@@ -283,10 +283,22 @@ footer{
     padding-bottom: 60px;
 }
 
+.logo-footer{
+    display: inline-block;
+    margin-bottom: 20px;
+
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
 .studio-footer{
     color: var(--white-text-color);
 }
 .adress{
+    display: inline-block;
     padding-bottom: 9px;
 
     color: var(--white-text-color);
@@ -308,10 +320,6 @@ footer{
 
 .adress-footer:hover{
     color: var(--accent-color);
-}
-
-.adress-footer.link:not(:last-child){
-    margin-bottom: 9px;
 }
 
 /* Страница портфолио*/
