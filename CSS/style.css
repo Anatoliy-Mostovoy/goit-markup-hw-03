@@ -160,10 +160,10 @@ header{
     text-align: center;  
     
 }
-/*section*/
+/*section*/ 
 .section{
     letter-spacing: 0.03em;
-    padding: 94px;
+    padding: 94px 0;
 }
 .section-title.hidden{
     position: absolute;
@@ -183,6 +183,13 @@ header{
     line-height: 1,16;
     text-align: center;
 }
+.advantages.list{
+    display: flex;
+}
+
+.advantages-list:not(:last-child){
+    margin-right: 30px;
+}
 .section.team{
     background-color: var(--secondary-bgc-color);
 }
@@ -200,7 +207,7 @@ header{
 
 .advantages p{
     margin-top: 0px;
-    margin-bottom: 94px;
+    margin-bottom: 0px;
 }
 .advantages .text{
     margin-top: 0px;
@@ -208,8 +215,34 @@ header{
     font-size: 14px;
     line-height: 1.71;
 }
+
+.section.job{
+    padding-top: 0px;
+}
+
+.job-list{
+    display: flex;
+}
+.job-foto:not(:last-child){
+    margin-right: 30px;
+
+}
+.employer.list{
+    display: flex;
+}
+
+.empoyer-card:not(:last-child){
+    margin-right: 30px;
+}
+
+.employer-foto{
+    margin-bottom: 30px;
+}
+
 .employer .title{
     color: var(--secondary-text-color);
+    margin-top: 0px;
+    margin-bottom: 10px;
     
     font-weight: 500;
     font-size: 16px;
@@ -218,6 +251,9 @@ header{
 
 }
 .employer .text{
+    margin-top: 0px;
+    margin-bottom: 30px;
+    
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
