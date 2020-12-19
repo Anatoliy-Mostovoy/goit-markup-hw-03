@@ -49,7 +49,7 @@ header{
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;
+    margin: 0px auto;
 
     outline: 3px solid tomato;
 }
@@ -63,7 +63,7 @@ header{
     margin-right: 92px;
 
     font-family: Raleway;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
@@ -98,11 +98,23 @@ header{
     color: var(--accent-color)
 }
 
+.site-nav .link:hover{
+    color: var(--accent-color);
+}
+
 .auth-nav{
     display: flex;
     margin-left: auto;
+    align-items: center;
+}
+.auth-nav .link{
+    padding: 32px 0px;
+}
 
-}.auth-nav>.link:not(:last-child){
+.auth-nav .adress-header:hover{
+    color: var(--accent-color);
+}
+.auth-nav>.link:not(:last-child){
     margin-right: 50px;
 }
 
@@ -115,14 +127,10 @@ header{
     letter-spacing: 0.02em;
 }
 
+
 .adress-header:hover,
 .adress-header:focus{
     color: var(--accent-color);
-    font-family: Roboto;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
 }
 
 /*------------ main*/
@@ -230,9 +238,16 @@ header{
 .employer.list{
     display: flex;
 }
+.employer-card{
+    width:270px;
+    background-color: white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
 
-.empoyer-card:not(:last-child){
+.employer-card:not(:last-child){
     margin-right: 30px;
+    
 }
 
 .employer-foto{
@@ -253,7 +268,7 @@ header{
 .employer .text{
     margin-top: 0px;
     margin-bottom: 30px;
-    
+
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -263,10 +278,17 @@ header{
 footer{
     background-color: var(--dark-bgc-color);
 }
+.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .studio-footer{
     color: var(--white-text-color);
 }
 .adress{
+    padding-bottom: 9px;
+
     color: var(--white-text-color);
     font-style: normal;  
     font-weight: 400;
@@ -283,6 +305,15 @@ footer{
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
+
+.adress-footer:hover{
+    color: var(--accent-color);
+}
+
+.adress-footer.link:not(:last-child){
+    margin-bottom: 9px;
+}
+
 /* Страница портфолио*/
 /* Кнопки */
 .button{
