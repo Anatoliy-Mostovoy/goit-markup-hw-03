@@ -144,6 +144,7 @@ header{
 /* стили для hero*/
 .hero{
     /* outline: 3px solid tomato; */
+    padding: 200px 0;
     background-color: var(--dark-bgc-color);
     letter-spacing: 0.06em;
     text-align: center;
@@ -166,7 +167,6 @@ header{
     min-width: 200px;
     cursor:pointer;
     outline: transparent;
-    margin-bottom: 294px;
 
     color: var(--white-text-color);
     background-color: var(--accent-color);
@@ -284,12 +284,8 @@ header{
     }
 /*-------------footer*/
 footer{
+    padding: 60px;
     background-color: var(--dark-bgc-color);
-}
-
-.footer{
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
 
 .logo-footer{
